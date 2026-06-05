@@ -1,0 +1,25 @@
+{
+  "name": "starweb-audio",
+  "description": "Web Audio API playback, volume, and sound management",
+  "author": "Mason L'Etoile",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starlet-web-engine/starweb-audio"
+  },
+  "keywords": ["audio", "web-audio", "sound", "typescript", "browser"],
+  "version": "1.0.0",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "exports": {
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
+  }
+}
