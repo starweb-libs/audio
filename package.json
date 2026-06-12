@@ -1,14 +1,18 @@
 {
-  "name": "starweb-audio",
+  "name": "@starweb-libs/audio",
   "description": "Web Audio API playback, volume, and sound management",
   "author": "Mason L'Etoile",
+  "version": "0.0.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/starweb-libs/audio"
+    "url": "git+https://github.com/starweb-libs/audio.git"
   },
-  "keywords": ["audio", "web-audio", "sound", "typescript", "browser"],
-  "version": "1.0.0",
+  "homepage": "https://github.com/starweb-libs/audio#readme",
+  "bugs": {
+    "url": "https://github.com/starweb-libs/audio/issues"
+  },
+  "keywords": ["audio", "web-audio", "sound", "typescript", "browser", "starweb"],
   "type": "module",
   "devDependencies": {
     "typescript": "~6.0.2"
@@ -17,11 +21,8 @@
     "build": "tsc -p tsconfig.build.json",
     "prepare": "tsc -p tsconfig.build.json"
   },
-  "files": ["dist", "src"],
+  "files": ["dist"],
   "exports": {
-    "./*.js": {
-      "types": "./dist/*.d.ts",
-      "import": "./dist/*.js"
-    }
+    "./audio.js": { "types": "./dist/audio.d.ts", "import": "./dist/audio.js" }
   }
 }
