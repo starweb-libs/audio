@@ -15,14 +15,19 @@
   "keywords": ["audio", "web-audio", "sound", "typescript", "browser", "starweb"],
   "type": "module",
   "devDependencies": {
-    "typescript": "~6.0.2"
+    "typescript": "~6.0.2",
+    "tsdown": "^0.22.0"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsdown",
     "prepare": "npm run build"
   },
   "files": ["dist"],
   "exports": {
-    "./audio.js": { "types": "./dist/audio.d.ts", "import": "./dist/audio.js" }
+    "./audio.js": {
+      "types": "./dist/audio.d.mts",
+      "@starweb-libs/source": "./src/audio.ts",
+      "import": "./dist/audio.mjs"
+    }
   }
 }
