@@ -2,7 +2,7 @@
   "name": "@starweb-libs/audio",
   "description": "Web Audio API playback, volume, and sound management",
   "author": "Mason L'Etoile",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": {
     "type": "git",
