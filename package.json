@@ -19,6 +19,7 @@
     "tsdown": "^0.22.0"
   },
   "scripts": {
+    "typecheck": "tsc --noEmit",
     "build": "tsdown",
     "prepare": "npm run build"
   },
